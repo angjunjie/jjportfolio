@@ -1,0 +1,171 @@
+<!-- //why we call it index is because its the homepage. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <!-- //period means class (.nav-container) -->
+    <div class="nav-container" id="navcon">
+        <header>
+            <a href="index.html" class="logo">Junjie Ang</a>
+            <nav>
+                <ul>
+                    <li>
+                        <!-- a is for hyperlink-->
+                        <!-- shift + alt + down arrow key = replicate-->
+                        <a href="#">My work</a>
+                        <a href="#"><img src="">Github</a>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </header>   
+
+    </div>
+
+    <div class="hero">
+        <div class="content">
+            <h1>Hi, My name is Junjie</h1>
+            <div class="meet">
+                <span> I graduated with a Financial Informatics diploma in 2020 from Nanyang Polytechnic. This course helped to kickstart my passion for software and web development. 
+                    I love to code and hope to build products that will solve user problems with the latest technologies.
+                </span>
+                
+            </div>
+            
+                     
+        </div>
+        <div class="skillset"><img src="images/myskillz.svg"></div>
+        
+    </div>
+    <div class="arrow-down">Scroll down to check out my work</div>
+    <!--Put scrollbar-->
+    
+    
+
+    <section class="featured">
+        <div id="taxx" class="left">
+            <div class="inner transition2">
+                <p class="subtitle">Featured Project</p>
+                <a href="#" class="featured-title">Easy Entry Mobile Application (2021)</a>
+                <a href="#" class="featured-title2">Used: Dart Language and Flutter Framework</a>
+
+                <p class="featured-desc">Created in response to the recent Covid-19 Pandemic Situation, EasyEntry is a mobile application which works as a database which stores links to SafeEntry QR Code's you have been to.   </p>
+                <p class="featured-desc"> It eliminates the constant need to scan QR Codes to places you have already been to, whenever you visit, making it convenient. </p>
+
+            </div>
+        </div>
+        <video id="video" height= "700px" width= "500px" controls>
+            <source src="images/easyentryvid.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        
+
+    </section>
+
+    <section class="skills">
+        <div class="skills-container">
+            <ul>
+                <li class="transition2">
+                    <div class="icon-container one">
+                        <img src="images/userix.png" alt="UI/UX Icon">
+                    </div>
+                    <p class="skill-title">UI UX Design</p>
+                    <p class=" skill-desc">Uses Flutter, a reactive and pseudo-declarative UI Framework along with Dart programming language to build UI.</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container two">
+                        <img src="images/imagefive.png" alt="UI/UX Icon">
+                    </div>
+                    <p class="skill-title">Backend development</p>
+                    <p class=" skill-desc">Utilizes SQFlite, which is a flutter plugin for SQLite that serves as the database engine</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container three">
+                        <img src="images/crossplatform.png" alt="UI/UX Icon">
+                    </div>
+                    <p class="skill-title">Cross platform</p>
+                    <p class=" skill-desc">Flutter framework is the only framework that provides reactive views without requiring JavaScript Bridge.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="portfolio-container2 transition3">
+            <img height="700px" width="400px" src="images/mainpage.svg" alt="mostvisitedspots">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">Scan your QR</p>
+                    <p class="featured-title">Implements QR scanning (only for SafeEntry QR codes!)</p>
+                    <p class="featured-desc"> Makes use of the flutter plugin "qrscan" and "url_launcher" to scan and open the link for the QRCodes.This portion of the video shows the scanning of the QR code, leading it to be added into the database on the "All Locations Page"(0:00 to 0:17).</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">Locations visited</p>
+                    <p class="featured-title">Showcases the list of locations you have been to so far, through QR Code scanning.</p>
+                    <p class="featured-desc">This portion of the video shows the locations stored in your database. This page also applies a case-insensitive search bar, making finding your desired location much easier. (0:31 to 0:47)</p>
+                </div>
+            </div>
+            <a href="#"><img height="700px"  src="images/alllocationspage.svg" alt="mostvisitedspots"></a>
+        </div>
+
+        <div class="portfolio-container2 transition3">
+            <img height="700px" width="400px" src="images/mostvisitedspots.svg" alt="mostvisitedspots">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">Your most visited spots</p>
+                    <p class="featured-title">Highlights your top 5 places you've been to,based on how many times you've clicked on the location, making it all the more convenient.</p>
+                    <p class="featured-desc">This portion of the video showcases the "Most visited spots" page being updated after clicking on "NTUC Fairprice" a few times (0:18 to 0:30)</p>
+                
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navcon");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+var myvideo = document.getElementById('video'),
+jumplink = document.getElementById('jump');
+
+jumplink.addEventListener("click", function(event) {
+    event.preventDefault();
+    myvideo.play();
+    myvideo.pause();
+    myvideo.currentTime = 18;
+    myvideo.play();
+}, false);
+
+</script>
+
+
+
+</body>
+</html>

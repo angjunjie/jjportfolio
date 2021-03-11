@@ -1,0 +1,124 @@
+<!-- //why we call it index is because its the homepage. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- //period means class (.nav-container) -->
+    <div class="nav-container" id="navcon">
+        <header>
+            <a href="index.html" class="logo">Junjie Ang</a>
+            <nav>
+                <ul>
+                    <li>
+                        <!-- a is for hyperlink-->
+                        <!-- shift + alt + down arrow key = replicate-->
+                        <a href="#">My work</a>
+                        <a href="#"><img src="">Github</a>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </header>   
+
+    </div>
+
+    <div class="hero">
+        <div class="content">
+            <h1>Hi, My name is Junjie</h1>
+            <div class="meet">
+                <span>Financial Informatics Graduate from Nanyang Polytechnic. I have experience in programming</span>
+                
+            </div>
+            
+                     
+        </div>
+        <div class="skillset"><img src="images/myskillz.svg"></div>
+        
+    </div>
+    <div class="arrow-down">Scroll down to check out my work</div>
+    <!--Put scrollbar-->
+    
+    
+
+    <section class="featured">
+        <div class="left">
+            <div class="inner transition2">
+                <p class="subtitle">Featured Project</p>
+                <a href="#" class="featured-title">Easy Entry Mobile Application</a>
+                <p class="featured-desc">Created in response to the recent Covid-19 Pandemic Situation. A SafeEntry QR  </p>
+
+            </div>
+        </div>
+        <img class ="right transition2" src="images/imagefour.png" alt="Featured Project">
+        
+
+    </section>
+
+    <section class="skills">
+        <div class="skills-container">
+            <ul>
+                <li class="transition2">
+                    <div class="icon-container one">
+                        <img src="images/imagefour.png" alt="UI/UX Icon">
+                    </div>
+                    <p class="skill-title">UI UX Design</p>
+                    <p class="featured-desc skill-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima unde debitis alias, dolore quidem reprehenderit enim quis quia voluptate cum.</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container two">
+                        <img src="images/imagefive.png" alt="UI/UX Icon">
+                    </div>
+                    <p class="skill-title">Frontend Development</p>
+                    <p class="featured-desc skill-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, excepturi!</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container three">
+                        <img src="images/imagesix.png" alt="UI/UX Icon">
+                    </div>
+                    <p class="skill-title">Identity Design</p>
+                    <p class="featured-desc skill-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, excepturi!</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">Easy Entry</p>
+                    <p class="featured-title">Made by JJ</p>
+                    <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, dignissimos.</p>
+                </div>
+            </div>
+            <a href="#"><img src="images/imagesix.png" alt="Fretastic"></a>
+        </div>
+
+    </section>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navcon");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+</body>
+</html>
