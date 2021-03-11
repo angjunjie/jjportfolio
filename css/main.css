@@ -19,8 +19,26 @@ img {
   width: 100%;
 }
 
+.divider {
+  display: block;
+  width: 95%;
+  height: 4px;
+  background: #DEB992;
+  margin-top: 100px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.divider p {
+  color: #DEB992;
+  text-align: center;
+}
+
 .nav-container {
   background: #051622;
+  z-index: 90;
   position: fixed;
   /* Set the navbar to fixed position */
   top: 0;
@@ -38,8 +56,8 @@ img {
   margin: 0 auto;
   text-align: center;
   position: absolute;
-  bottom: 225px;
-  font-size: 20px;
+  bottom: 0px;
+  font-size: 15px;
   color: #DEB992;
 }
 
@@ -92,7 +110,7 @@ header {
 header .logo {
   color: #1BA098;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 16px;
 }
 
 header nav {
@@ -106,9 +124,9 @@ header nav ul {
 }
 
 header nav ul a {
-  display: inline-block;
+  display: block;
   padding: 0 1em;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .social-header {
@@ -139,8 +157,14 @@ header nav ul a {
 }
 
 .meet span {
-  margin-top: 1em;
-  margin-right: 2em;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
   font-size: larger;
 }
 
@@ -150,7 +174,6 @@ section {
 }
 
 .featured {
-  position: relative;
   background: #051622;
   background-image: linear-gradient(150deg, #051622 70%, #2e194e);
 }
@@ -301,12 +324,37 @@ section {
   .nav-container {
     display: -ms-grid;
     display: grid;
+    z-index: 90;
   }
 }
 
 @media only screen and (min-width: 800px) {
   header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 2em 2em 2em 4em;
+  }
+  header .logo {
+    color: #1BA098;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  header nav {
+    float: right;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ul a {
+    display: block;
+    padding: 0 1em;
+    font-size: 20px;
   }
   .social-header {
     padding: 2em 4em 2em 0;
@@ -363,6 +411,15 @@ section {
 }
 
 @media only screen and (min-width: 1250px) {
+  .arrow-down {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    bottom: 250px;
+    font-size: 20px;
+    color: #DEB992;
+  }
   header {
     padding: 2em 2em 2em 4em;
   }

@@ -19,8 +19,7 @@
                     <li>
                         <!-- a is for hyperlink-->
                         <!-- shift + alt + down arrow key = replicate-->
-                        <a href="#">My work</a>
-                        <a href="#"><img src="">Github</a>
+                        <a href="https://github.com/angjunjie"><img src="">Github</a>
                         
                     </li>
                 </ul>
@@ -30,9 +29,9 @@
     </div>
 
     <div class="hero">
-        <div class="content">
+        <div class="content stagger1">
             <h1>Hi, My name is Junjie</h1>
-            <div class="meet">
+            <div class="meet stagger1">
                 <span> I graduated with a Financial Informatics diploma in 2020 from Nanyang Polytechnic. This course helped to kickstart my passion for software and web development. 
                     I love to code and hope to build products that will solve user problems with the latest technologies.
                 </span>
@@ -50,7 +49,7 @@
     
 
     <section class="featured">
-        <div id="taxx" class="left">
+        <div class="left">
             <div class="inner transition2">
                 <p class="subtitle">Featured Project</p>
                 <a href="#" class="featured-title">Easy Entry Mobile Application (2021)</a>
@@ -61,7 +60,7 @@
 
             </div>
         </div>
-        <video id="video" height= "700px" width= "500px" controls>
+        <video class="transition2" id="video" height= "700px"  controls>
             <source src="images/easyentryvid.mp4" type="video/mp4">
             <source src="movie.ogg" type="video/ogg">
             Your browser does not support the video tag.
@@ -73,21 +72,21 @@
     <section class="skills">
         <div class="skills-container">
             <ul>
-                <li class="transition2">
+                <li class="transition6">
                     <div class="icon-container one">
                         <img src="images/userix.png" alt="UI/UX Icon">
                     </div>
                     <p class="skill-title">UI UX Design</p>
                     <p class=" skill-desc">Uses Flutter, a reactive and pseudo-declarative UI Framework along with Dart programming language to build UI.</p>
                 </li>
-                <li class="transition2">
+                <li class="transition6">
                     <div class="icon-container two">
                         <img src="images/imagefive.png" alt="UI/UX Icon">
                     </div>
                     <p class="skill-title">Backend development</p>
                     <p class=" skill-desc">Utilizes SQFlite, which is a flutter plugin for SQLite that serves as the database engine</p>
                 </li>
-                <li class="transition2">
+                <li class="transition6">
                     <div class="icon-container three">
                         <img src="images/crossplatform.png" alt="UI/UX Icon">
                     </div>
@@ -99,10 +98,10 @@
     </section>
 
     <section class="portfolio">
-        <div class="portfolio-container2 transition3">
-            <img height="700px" width="400px" src="images/mainpage.svg" alt="mostvisitedspots">
+        <div class="portfolio-container2">
+            <img class="transitionimg3" height="700px" width="400px" src="images/mainpage.svg" alt="mostvisitedspots">
             <div class="portfolio-left">
-                <div class="inner">
+                <div class="inner transition3">
                     <p class="subtitle">Scan your QR</p>
                     <p class="featured-title">Implements QR scanning (only for SafeEntry QR codes!)</p>
                     <p class="featured-desc"> Makes use of the flutter plugin "qrscan" and "url_launcher" to scan and open the link for the QRCodes.This portion of the video shows the scanning of the QR code, leading it to be added into the database on the "All Locations Page"(0:00 to 0:17).</p>
@@ -111,21 +110,21 @@
 
         </div>
         
-        <div class="portfolio-container transition3">
+        <div class="portfolio-container transition4">
             <div class="portfolio-left">
-                <div class="inner">
+                <div class="inner transition4">
                     <p class="subtitle">Locations visited</p>
                     <p class="featured-title">Showcases the list of locations you have been to so far, through QR Code scanning.</p>
                     <p class="featured-desc">This portion of the video shows the locations stored in your database. This page also applies a case-insensitive search bar, making finding your desired location much easier. (0:31 to 0:47)</p>
                 </div>
             </div>
-            <a href="#"><img height="700px"  src="images/alllocationspage.svg" alt="mostvisitedspots"></a>
+            <a href="#"><img class="transitionimg4 height="700px" src="images/alllocationspage.svg" alt="mostvisitedspots"></a>
         </div>
 
-        <div class="portfolio-container2 transition3">
-            <img height="700px" width="400px" src="images/mostvisitedspots.svg" alt="mostvisitedspots">
+        <div class="portfolio-container2">
+            <img class= transitionimg5 height="700px" width="400px" src="images/mostvisitedspots.svg" alt="mostvisitedspots">
             <div class="portfolio-left">
-                <div class="inner">
+                <div class="inner transition5">
                     <p class="subtitle">Your most visited spots</p>
                     <p class="featured-title">Highlights your top 5 places you've been to,based on how many times you've clicked on the location, making it all the more convenient.</p>
                     <p class="featured-desc">This portion of the video showcases the "Most visited spots" page being updated after clicking on "NTUC Fairprice" a few times (0:18 to 0:30)</p>
@@ -135,37 +134,156 @@
             </div>
 
         </div>
+        <div class="divider">
+            <span class="divider"></span>
+            <p>Thank you for checking out my portfolio. </p> 
+
+        </div>
 
     </section>
 
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg==" crossorigin="anonymous"></script>
 <script>
-window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navcon");
-var sticky = navbar.offsetTop;
+    var tl = gsap.timeline();
+    tl.from('.content', {
+        y: '-30%',
+        opacity: 1,
+        ease: Power4.easeOut,
+        duration: 1.5
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+    }),
+    gsap.from('.skillset', {
+        y: '-30%',
+        opacity: 1,
+        ease: Power4.easeOut,
+        duration: 1.5
 
-var myvideo = document.getElementById('video'),
-jumplink = document.getElementById('jump');
-
-jumplink.addEventListener("click", function(event) {
-    event.preventDefault();
-    myvideo.play();
-    myvideo.pause();
-    myvideo.currentTime = 18;
-    myvideo.play();
-}, false);
-
-</script>
+    }),
 
 
+    gsap.from(".transition2",
+    {
+        scrollTrigger: {
+            trigger: '.transition2',
+            start: "top bottom"
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.4,
+        stagger: .3
+    }),
+    gsap.from(".transition6",
+    {
+        scrollTrigger: {
+            trigger: '.transition6',
+            start: "top bottom"
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.4,
+        stagger: .3
+    }),
 
+    gsap.from(".transition3",
+    {
+        scrollTrigger: {
+            trigger: '.transition3',
+            start: "top bottom"
+        },
+        x: 50,
+        opacity: 0,
+        duration: 1.4,
+        stagger: .3
+    }),
+    gsap.from(".transitionimg3",
+    {
+        scrollTrigger: {
+            trigger: '.transition3',
+            start: "top bottom"
+        },
+        x: -50,
+        opacity: 0,
+        duration: 1.4,
+        stagger: .3
+    }),
+
+    gsap.from(".transition4",
+    {
+        scrollTrigger: {
+            trigger: '.transition4',
+            start: "top bottom"
+        },
+        x: -50,
+        opacity: 0,
+        duration: 1.4,
+        stagger: .3
+    }),
+    gsap.from(".transitionimg4",
+    {
+        scrollTrigger: {
+            trigger: '.transition4',
+            start: "top bottom"
+        },
+        x: 50,
+        opacity: 0,
+        duration: 1.4,
+        stagger: .3
+    }),
+    gsap.from(".transition5",
+    {
+        scrollTrigger: {
+            trigger: '.transition5',
+            start: "top bottom"
+        },
+        x: 50,
+        opacity: 0,
+        duration: 1.4,
+        stagger: .3
+    }),
+    gsap.from(".transitionimg5",
+    {
+        scrollTrigger: {
+            trigger: '.transition5',
+            start: "top bottom"
+        },
+        x: -50,
+        opacity: 0,
+        duration: 1.4,
+        stagger: .3
+    }),
+    
+
+
+
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navcon");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    
+    var myvideo = document.getElementById('video'),
+    jumplink = document.getElementById('jump');
+    
+    jumplink.addEventListener("click", function(event) {
+        event.preventDefault();
+        myvideo.play();
+        myvideo.pause();
+        myvideo.currentTime = 18;
+        myvideo.play();
+    }, false);
+    
+    </script>
 </body>
 </html>
